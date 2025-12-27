@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,23 +10,41 @@
     <style>
         /* Используем шрифт Nunito, он мягкий и подходит для детской тематики */
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
-        body { font-family: 'Nunito', sans-serif; }
-        
+
+        body {
+            font-family: 'Nunito', sans-serif;
+        }
+
         /* Основной цвет бренда */
-        .text-klever { color: #78B833; }
-        .bg-klever { background-color: #78B833; }
-        .border-klever { border-color: #78B833; }
-        
+        .text-klever {
+            color: #78B833;
+        }
+
+        .bg-klever {
+            background-color: #78B833;
+        }
+
+        .border-klever {
+            border-color: #78B833;
+        }
+
         /* Эффект при наведении на карточки */
-        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
     </style>
 </head>
+
 <body class="bg-slate-50 text-gray-800">
 
     <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center space-x-2 md:space-x-3">
-               <img src="/img/logo.jpg" alt="Logo" class="w-14 h-14 rounded-full border-2 border-klever">
+
+                <img src="https://i.ibb.co/W4H14jhY/logo.jpg" alt="Logo"
+                    class="w-14 h-14 rounded-full border-2 border-klever">
                 <span class="font-extrabold text-xl md:text-2xl tracking-tight text-klever">KLEVER</span>
             </div>
             <div class="hidden md:flex space-x-6 lg:space-x-8 font-semibold text-sm lg:text-base">
@@ -34,7 +53,8 @@
                 <a href="#events" class="hover:text-klever transition">События</a>
                 <a href="#rules" class="hover:text-klever transition">Правила</a>
             </div>
-            <a href="https://t.me/Klever_uz" class="bg-klever text-white px-4 py-2 md:px-6 md:py-2 rounded-full font-bold text-sm md:text-base hover:bg-green-600 transition flex items-center">
+            <a href="https://t.me/Klever_uz"
+                class="bg-klever text-white px-4 py-2 md:px-6 md:py-2 rounded-full font-bold text-sm md:text-base hover:bg-green-600 transition flex items-center">
                 <i class="fab fa-telegram-plane mr-2 md:hidden"></i>
                 <span class="hidden md:inline">Записаться</span>
                 <span class="md:hidden">Связаться</span>
@@ -42,115 +62,160 @@
         </div>
     </nav>
 
-<header class="relative bg-green-50 pt-10 pb-16 md:py-24 overflow-hidden">
-    <div class="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12">
-        <div class="w-full md:w-1/2 relative z-10 text-center md:text-left">
-            <h1 class="text-3xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-4 md:mb-6">
-                Счастье расти <span class="text-klever relative inline-block">
-                    вместе!
-                    <svg class="absolute -bottom-2 left-0 w-full" height="10" viewBox="0 0 200 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2 8C45.4061 3.19384 107.02 1.1056 198 4.74287" stroke="#78B833" stroke-width="4" stroke-linecap="round"/>
-                    </svg>
-                </span>
-            </h1>
-            <p class="text-base md:text-lg text-gray-600 mb-8 md:pr-12">
-                KLEVER — пространство, где бережно раскрывают таланты. Уютная атмосфера, профессиональные педагоги и современные методики для гармоничного развития вашего ребенка.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-                <a href="#prices" class="bg-klever text-white px-8 py-3 md:py-4 rounded-xl font-bold shadow-lg hover:shadow-xl hover:bg-green-600 transition text-center">Выбрать абонемент</a>
-                <a href="#pochemuchka" class="bg-white text-klever border-2 border-klever px-8 py-3 md:py-4 rounded-xl font-bold hover:bg-green-50 transition flex items-center justify-center">
-                    <i class="fas fa-lightbulb mr-2"></i>Курс "Почемучка"
-                </a>
+    <header class="relative bg-green-50 pt-10 pb-16 md:py-24 overflow-hidden">
+        <div class="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12">
+            <div class="w-full md:w-1/2 relative z-10 text-center md:text-left">
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-4 md:mb-6">
+                    Счастье расти <span class="text-klever relative inline-block">
+                        вместе!
+                        <svg class="absolute -bottom-2 left-0 w-full" height="10" viewBox="0 0 200 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 8C45.4061 3.19384 107.02 1.1056 198 4.74287" stroke="#78B833" stroke-width="4"
+                                stroke-linecap="round" />
+                        </svg>
+                    </span>
+                </h1>
+                <p class="text-base md:text-lg text-gray-600 mb-8 md:pr-12">
+                    KLEVER — пространство, где бережно раскрывают таланты. Уютная атмосфера, профессиональные педагоги и
+                    современные методики для гармоничного развития вашего ребенка.
+                </p>
+                <div
+                    class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#prices"
+                        class="bg-klever text-white px-8 py-3 md:py-4 rounded-xl font-bold shadow-lg hover:shadow-xl hover:bg-green-600 transition text-center">Выбрать
+                        абонемент</a>
+                    <a href="#pochemuchka"
+                        class="bg-white text-klever border-2 border-klever px-8 py-3 md:py-4 rounded-xl font-bold hover:bg-green-50 transition flex items-center justify-center">
+                        <i class="fas fa-lightbulb mr-2"></i>Курс "Почемучка"
+                    </a>
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/2 relative z-0">
+                <div
+                    class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob">
+                </div>
+
+                <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&q=80&w=800"
+                    alt="Счастливый ребенок в Klever"
+                    class="w-full max-w-md md:max-w-full lg:max-w-lg xl:max-w-xl mx-auto rounded-3xl shadow-2xl relative z-10 object-cover h-64 md:h-auto sm:h-80 scale-x-[-1]" />
             </div>
         </div>
-        
-        <div class="w-full md:w-1/2 relative z-0">
-            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
-            
-            <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&q=80&w=800" 
-                 alt="Счастливый ребенок в Klever" 
-                 class="w-full max-w-md md:max-w-full lg:max-w-lg xl:max-w-xl mx-auto rounded-3xl shadow-2xl relative z-10 object-cover h-64 md:h-auto sm:h-80">
-        </div>
-    </div>
-</header>
+    </header>
 
     <section id="prices" class="py-16 md:py-24 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-gray-900">Наши абонементы</h2>
-                <p class="text-gray-500 max-w-2xl mx-auto">Выберите удобный формат посещений для гармоничного развития вашего малыша.</p>
+                <p class="text-gray-500 max-w-2xl mx-auto">Выберите удобный формат посещений для гармоничного развития
+                    вашего малыша.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-                
-                <div class="bg-white p-6 lg:p-8 rounded-3xl border border-gray-200 text-center card-hover flex flex-col relative overflow-hidden">
+
+                <div
+                    class="bg-white p-6 lg:p-8 rounded-3xl border border-gray-200 text-center card-hover flex flex-col relative overflow-hidden">
                     <div class="mb-4">
-                         <h3 class="font-bold text-xl text-gray-800">Базовый 8</h3>
-                        <span class="inline-block bg-green-100 text-klever text-xs px-3 py-1 rounded-full mt-2 font-semibold">1ч 20м / занятие</span>
+                        <h3 class="font-bold text-xl text-gray-800">Базовый 8</h3>
+                        <span
+                            class="inline-block bg-green-100 text-klever text-xs px-3 py-1 rounded-full mt-2 font-semibold">1ч
+                            20м / занятие</span>
                     </div>
-                     <div class="text-3xl font-black text-gray-900 mb-1">860 000 <span class="text-sm text-gray-500 font-normal">сум</span></div>
-                     <p class="text-gray-400 text-sm mb-6">за 8 занятий</p>
-                    
+                    <div class="text-3xl font-black text-gray-900 mb-1">860 000 <span
+                            class="text-sm text-gray-500 font-normal">сум</span></div>
+                    <p class="text-gray-400 text-sm mb-6">за 8 занятий</p>
+
                     <ul class="text-sm text-gray-600 space-y-3 mb-8 text-left flex-grow">
-                        <li class="flex items-center"><i class="fas fa-check-circle text-klever mr-3 text-lg"></i>Комплексное развитие</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-klever mr-3 text-lg"></i>Творческая мастерская</li>
-                        
+                        <li class="flex items-center"><i
+                                class="fas fa-check-circle text-klever mr-3 text-lg"></i>Комплексное развитие</li>
+                        <li class="flex items-center"><i
+                                class="fas fa-check-circle text-klever mr-3 text-lg"></i>Творческая мастерская</li>
+
                     </ul>
-                    <a href="https://t.me/Klever_uz" class="w-full py-3 bg-gray-100 text-gray-700 rounded-xl font-bold hover:bg-klever hover:text-white transition">Выбрать</a>
+                    <a href="https://t.me/Klever_uz"
+                        class="w-full py-3 bg-gray-100 text-gray-700 rounded-xl font-bold hover:bg-klever hover:text-white transition">Выбрать</a>
                 </div>
 
-                 <div class="bg-white p-6 lg:p-8 rounded-3xl border border-gray-200 text-center card-hover flex flex-col relative overflow-hidden">
+                <div
+                    class="bg-white p-6 lg:p-8 rounded-3xl border border-gray-200 text-center card-hover flex flex-col relative overflow-hidden">
                     <div class="mb-4">
-                         <h3 class="font-bold text-xl text-gray-800">Оптимальный 12</h3>
-                        <span class="inline-block bg-green-100 text-klever text-xs px-3 py-1 rounded-full mt-2 font-semibold">1ч 20м / занятие</span>
+                        <h3 class="font-bold text-xl text-gray-800">Оптимальный 12</h3>
+                        <span
+                            class="inline-block bg-green-100 text-klever text-xs px-3 py-1 rounded-full mt-2 font-semibold">1ч
+                            20м / занятие</span>
                     </div>
-                     <div class="text-3xl font-black text-gray-900 mb-1">990 000 <span class="text-sm text-gray-500 font-normal">сум</span></div>
-                     <p class="text-gray-400 text-sm mb-6">за 12 занятий</p>
-                    
+                    <div class="text-3xl font-black text-gray-900 mb-1">990 000 <span
+                            class="text-sm text-gray-500 font-normal">сум</span></div>
+                    <p class="text-gray-400 text-sm mb-6">за 12 занятий</p>
+
                     <ul class="text-sm text-gray-600 space-y-3 mb-8 text-left flex-grow">
-                        <li class="flex items-center"><i class="fas fa-check-circle text-klever mr-3 text-lg"></i>Интенсивная программа</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-klever mr-3 text-lg"></i>Больше практики</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-klever mr-3 text-lg"></i>Выгодная цена за урок</li>
+                        <li class="flex items-center"><i
+                                class="fas fa-check-circle text-klever mr-3 text-lg"></i>Интенсивная программа</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-klever mr-3 text-lg"></i>Больше
+                            практики</li>
+                        <li class="flex items-center"><i
+                                class="fas fa-check-circle text-klever mr-3 text-lg"></i>Выгодная цена за урок</li>
                     </ul>
-                     <a href="https://t.me/Klever_uz" class="w-full py-3 bg-gray-100 text-gray-700 rounded-xl font-bold hover:bg-klever hover:text-white transition">Выбрать</a>
+                    <a href="https://t.me/Klever_uz"
+                        class="w-full py-3 bg-gray-100 text-gray-700 rounded-xl font-bold hover:bg-klever hover:text-white transition">Выбрать</a>
                 </div>
 
 
-                <div class="bg-white p-6 lg:p-8 rounded-3xl border border-gray-200 text-center card-hover flex flex-col relative overflow-hidden">
-                     <div class="mb-4">
-                         <h3 class="font-bold text-xl text-gray-800">Мини-сад 8</h3>
-                        <span class="inline-block bg-orange-100 text-orange-600 text-xs px-3 py-1 rounded-full mt-2 font-semibold"><i class="far fa-clock mr-1"></i>По 3 часа</span>
+                <div
+                    class="bg-white p-6 lg:p-8 rounded-3xl border border-gray-200 text-center card-hover flex flex-col relative overflow-hidden">
+                    <div class="mb-4">
+                        <h3 class="font-bold text-xl text-gray-800">Мини-сад 8</h3>
+                        <span
+                            class="inline-block bg-orange-100 text-orange-600 text-xs px-3 py-1 rounded-full mt-2 font-semibold"><i
+                                class="far fa-clock mr-1"></i>По 3 часа</span>
                     </div>
-                     <div class="text-3xl font-black text-gray-900 mb-1">1 150 000 <span class="text-sm text-gray-500 font-normal">сум</span></div>
-                     <p class="text-gray-400 text-sm mb-6">за 8 занятий</p>
-                    
+                    <div class="text-3xl font-black text-gray-900 mb-1">1 150 000 <span
+                            class="text-sm text-gray-500 font-normal">сум</span></div>
+                    <p class="text-gray-400 text-sm mb-6">за 8 занятий</p>
+
                     <ul class="text-sm text-gray-600 space-y-3 mb-8 text-left flex-grow">
-                        <li class="flex items-center"><i class="fas fa-check-circle text-orange-400 mr-3 text-lg"></i>Погружение в среду</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-orange-400 mr-3 text-lg"></i>Социализация и игры</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-orange-400 mr-3 text-lg"></i>Развивающий блок</li>
+                        <li class="flex items-center"><i
+                                class="fas fa-check-circle text-orange-400 mr-3 text-lg"></i>Погружение в среду</li>
+                        <li class="flex items-center"><i
+                                class="fas fa-check-circle text-orange-400 mr-3 text-lg"></i>Социализация и игры</li>
+                        <li class="flex items-center"><i
+                                class="fas fa-check-circle text-orange-400 mr-3 text-lg"></i>Развивающий блок</li>
                     </ul>
-                     <a href="https://t.me/Klever_uz" class="w-full py-3 bg-gray-100 text-gray-700 rounded-xl font-bold hover:bg-orange-400 hover:text-white transition">Выбрать</a>
+                    <a href="https://t.me/Klever_uz"
+                        class="w-full py-3 bg-gray-100 text-gray-700 rounded-xl font-bold hover:bg-orange-400 hover:text-white transition">Выбрать</a>
                 </div>
 
-                <div class="bg-green-50 p-6 lg:p-8 rounded-3xl border-2 border-klever text-center card-hover flex flex-col relative overflow-hidden shadow-lg transform md:scale-105 z-10">
+                <div
+                    class="bg-green-50 p-6 lg:p-8 rounded-3xl border-2 border-klever text-center card-hover flex flex-col relative overflow-hidden shadow-lg transform md:scale-105 z-10">
                     <div class="absolute top-0 right-0">
-                        <div class="bg-red-500 text-white text-xs font-bold px-4 py-1 rounded-bl-lg uppercase tracking-wider">Выгодно</div>
+                        <div
+                            class="bg-red-500 text-white text-xs font-bold px-4 py-1 rounded-bl-lg uppercase tracking-wider">
+                            Выгодно</div>
                     </div>
 
                     <div class="mb-4">
-                         <h3 class="font-bold text-xl text-gray-900">Мини-сад PRO 12</h3>
-                        <span class="inline-block bg-orange-100 text-orange-600 text-xs px-3 py-1 rounded-full mt-2 font-semibold"><i class="far fa-clock mr-1"></i>По 3 часа</span>
+                        <h3 class="font-bold text-xl text-gray-900">Мини-сад PRO 12</h3>
+                        <span
+                            class="inline-block bg-orange-100 text-orange-600 text-xs px-3 py-1 rounded-full mt-2 font-semibold"><i
+                                class="far fa-clock mr-1"></i>По 3 часа</span>
                     </div>
-                     <div class="text-3xl font-black text-klever mb-1">1 450 000 <span class="text-sm text-gray-500 font-normal">сум</span></div>
-                     <p class="text-gray-400 text-sm mb-6">за 12 занятий</p>
-                    
+                    <div class="text-3xl font-black text-klever mb-1">1 450 000 <span
+                            class="text-sm text-gray-500 font-normal">сум</span></div>
+                    <p class="text-gray-400 text-sm mb-6">за 12 занятий</p>
+
                     <ul class="text-sm text-gray-700 space-y-3 mb-8 text-left flex-grow font-medium">
-                        <li class="flex items-center"><i class="fas fa-check-circle text-klever mr-3 text-lg"></i>Максимальное погружение</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-klever mr-3 text-lg"></i>Полная подготовка</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-klever mr-3 text-lg"></i>Лучшая цена часа</li>
-                        <li class="flex items-center"><i class="fas fa-star text-yellow-400 mr-3 text-lg"></i>Приоритет в листе ожидания</li>
+                        <li class="flex items-center"><i
+                                class="fas fa-check-circle text-klever mr-3 text-lg"></i>Максимальное погружение</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-klever mr-3 text-lg"></i>Полная
+                            подготовка</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-klever mr-3 text-lg"></i>Лучшая
+                            цена часа</li>
+                        <li class="flex items-center"><i class="fas fa-star text-yellow-400 mr-3 text-lg"></i>Приоритет
+                            в листе ожидания</li>
                     </ul>
-                    <a href="https://t.me/Klever_uz" class="w-full py-3 bg-klever text-white rounded-xl font-bold shadow-md hover:bg-green-700 transition animate-pulse">Записаться сейчас</a>
+                    <a href="https://t.me/Klever_uz"
+                        class="w-full py-3 bg-klever text-white rounded-xl font-bold shadow-md hover:bg-green-700 transition animate-pulse">Записаться
+                        сейчас</a>
                 </div>
             </div>
 
@@ -185,39 +250,50 @@
         <i class="fas fa-lightbulb absolute text-yellow-100 text-9xl -bottom-10 -right-10 opacity-50 -rotate-12"></i>
 
         <div class="container mx-auto px-4 relative z-10">
-            <div class="bg-white rounded-3xl shadow-xl overflow-hidden md:flex max-w-4xl mx-auto border-2 border-cyan-100">
-                <div class="md:w-2/5 bg-cyan-400 p-8 md:p-12 flex flex-col items-center justify-center text-white text-center relative overflow-hidden">
-                    <div class="absolute inset-0 bg-cyan-500 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+            <div
+                class="bg-white rounded-3xl shadow-xl overflow-hidden md:flex max-w-4xl mx-auto border-2 border-cyan-100">
+                <div
+                    class="md:w-2/5 bg-cyan-400 p-8 md:p-12 flex flex-col items-center justify-center text-white text-center relative overflow-hidden">
+                    <div
+                        class="absolute inset-0 bg-cyan-500 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]">
+                    </div>
                     <i class="fas fa-user-astronaut text-6xl md:text-7xl mb-6 relative z-10"></i>
-                    <h2 class="text-2xl md:text-3xl font-extrabold relative z-10 leading-tight mb-2">Курс "Почемучка"</h2>
+                    <h2 class="text-2xl md:text-3xl font-extrabold relative z-10 leading-tight mb-2">Курс "Почемучка"
+                    </h2>
                     <p class="text-cyan-50 relative z-10">Для самых любознательных исследователей!</p>
                 </div>
-                
+
                 <div class="md:w-3/5 p-6 md:p-10 flex flex-col justify-between">
                     <div>
                         <p class="text-lg text-gray-700 mb-6 font-medium">
-                            Ваш ребенок задает 100 вопросов в минуту? На курсе "Почемучка" мы не просто отвечаем на них, а познаем мир через увлекательные эксперименты, опыты и игры.
+                            Ваш ребенок задает 100 вопросов в минуту? На курсе "Почемучка" мы не просто отвечаем на них,
+                            а познаем мир через увлекательные эксперименты, опыты и игры.
                         </p>
                         <div class="flex flex-wrap gap-3 mb-8">
-                             <div class="bg-cyan-50 text-cyan-700 px-4 py-2 rounded-xl font-bold flex items-center text-sm">
+                            <div
+                                class="bg-cyan-50 text-cyan-700 px-4 py-2 rounded-xl font-bold flex items-center text-sm">
                                 <i class="fas fa-calendar-alt mr-2"></i>
                                 8 занятий в месяц
-                             </div>
-                             <div class="bg-cyan-50 text-cyan-700 px-4 py-2 rounded-xl font-bold flex items-center text-sm">
+                            </div>
+                            <div
+                                class="bg-cyan-50 text-cyan-700 px-4 py-2 rounded-xl font-bold flex items-center text-sm">
                                 <i class="far fa-clock mr-2"></i>
                                 по 1.5 часа (90 мин)
-                             </div>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="flex flex-col sm:flex-row items-center justify-between border-t border-gray-100 pt-6 gap-4">
+
+                    <div
+                        class="flex flex-col sm:flex-row items-center justify-between border-t border-gray-100 pt-6 gap-4">
                         <div>
                             <span class="text-sm text-gray-500 block">Стоимость курса:</span>
-                            <span class="text-3xl md:text-4xl font-black text-gray-900">980 000 <span class="text-lg font-normal text-gray-500">сум</span></span>
+                            <span class="text-3xl md:text-4xl font-black text-gray-900">980 000 <span
+                                    class="text-lg font-normal text-gray-500">сум</span></span>
                         </div>
-                         <a href="https://t.me/Klever_uz" class="w-full sm:w-auto bg-cyan-500 text-white px-8 py-3 rounded-xl font-bold hover:bg-cyan-600 transition text-center shadow-md hover:shadow-lg flex items-center justify-center">
+                        <a href="https://t.me/Klever_uz"
+                            class="w-full sm:w-auto bg-cyan-500 text-white px-8 py-3 rounded-xl font-bold hover:bg-cyan-600 transition text-center shadow-md hover:shadow-lg flex items-center justify-center">
                             <i class="fas fa-rocket mr-2"></i> Записать почемучку
-                         </a>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -228,53 +304,73 @@
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-12 text-gray-900">Яркие события в KLEVER</h2>
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col group">
+                <div
+                    class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col group">
                     <div class="h-48 bg-orange-100 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-orange-400 opacity-10 group-hover:opacity-20 transition-opacity bg-[url('https://www.transparenttextures.com/patterns/food.png')]"></div>
-                        <div class="flex h-full items-center justify-center">
-                             <i class="fas fa-campground text-6xl text-orange-500 transform group-hover:scale-110 transition-transform"></i>
+                        <div
+                            class="absolute inset-0 bg-orange-400 opacity-10 group-hover:opacity-20 transition-opacity bg-[url('https://www.transparenttextures.com/patterns/food.png')]">
                         </div>
-                         <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-orange-600 px-3 py-1 rounded-lg font-bold text-sm flex items-center">
+                        <div class="flex h-full items-center justify-center">
+                            <i
+                                class="fas fa-campground text-6xl text-orange-500 transform group-hover:scale-110 transition-transform"></i>
+                        </div>
+                        <div
+                            class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-orange-600 px-3 py-1 rounded-lg font-bold text-sm flex items-center">
                             <i class="far fa-calendar mr-2"></i> 25 октября
                         </div>
                     </div>
                     <div class="p-6 md:p-8 flex-grow flex flex-col">
                         <h3 class="text-2xl font-bold mb-3 text-gray-800">Осенний семейный пикник</h3>
-                        <p class="text-gray-600 mb-6 flex-grow">Вместе погрузимся в красоту осеннего парка, проведем творческие мастер-классы, насладимся угощениями и теплой компанией!</p>
-                        
+                        <p class="text-gray-600 mb-6 flex-grow">Вместе погрузимся в красоту осеннего парка, проведем
+                            творческие мастер-классы, насладимся угощениями и теплой компанией!</p>
+
                         <div class="space-y-3 text-sm text-gray-700 bg-orange-50 p-4 rounded-2xl">
-                            <p class="flex items-center"><i class="far fa-clock w-6 text-orange-500"></i> <span class="font-semibold mr-2">Время:</span> 11:00</p>
-                            <p class="flex items-start"><i class="fas fa-map-marker-alt w-6 text-orange-500 mt-1"></i> <span><span class="font-semibold mr-2">Место:</span> Парк Миллий Бог, зона для пикников</span></p>
+                            <p class="flex items-center"><i class="far fa-clock w-6 text-orange-500"></i> <span
+                                    class="font-semibold mr-2">Время:</span> 11:00</p>
+                            <p class="flex items-start"><i class="fas fa-map-marker-alt w-6 text-orange-500 mt-1"></i>
+                                <span><span class="font-semibold mr-2">Место:</span> Парк Миллий Бог, зона для
+                                    пикников</span></p>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col border-2 border-red-200 relative group">
-                     <div class="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg z-10">СКОРО</div>
+                <div
+                    class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col border-2 border-red-200 relative group">
+                    <div
+                        class="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg z-10">
+                        СКОРО</div>
 
                     <div class="h-48 bg-red-50 relative overflow-hidden">
-                         <div class="absolute inset-0 bg-red-500 opacity-10 group-hover:opacity-20 transition-opacity bg-[url('https://www.transparenttextures.com/patterns/snow.png')]"></div>
-                        <div class="flex h-full items-center justify-center">
-                             <i class="fas fa-gifts text-6xl text-red-500 transform group-hover:rotate-12 transition-transform"></i>
+                        <div
+                            class="absolute inset-0 bg-red-500 opacity-10 group-hover:opacity-20 transition-opacity bg-[url('https://www.transparenttextures.com/patterns/snow.png')]">
                         </div>
-                         <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-red-600 px-3 py-1 rounded-lg font-bold text-sm flex items-center">
+                        <div class="flex h-full items-center justify-center">
+                            <i
+                                class="fas fa-gifts text-6xl text-red-500 transform group-hover:rotate-12 transition-transform"></i>
+                        </div>
+                        <div
+                            class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-red-600 px-3 py-1 rounded-lg font-bold text-sm flex items-center">
                             <i class="far fa-calendar mr-2"></i> 25-26 декабря
                         </div>
                     </div>
                     <div class="p-6 md:p-8 flex-grow flex flex-col">
                         <h3 class="text-2xl font-bold mb-3 text-gray-800">Рождественский праздник</h3>
-                        <p class="text-gray-600 mb-4">Зимняя сказка! Украшаем ёлку, создаем игрушки, играем и встречаем Деда Мороза с мешком подарков!</p>
-                        
+                        <p class="text-gray-600 mb-4">Зимняя сказка! Украшаем ёлку, создаем игрушки, играем и встречаем
+                            Деда Мороза с мешком подарков!</p>
+
                         <div class="bg-red-50 p-4 rounded-2xl mb-4 border border-red-100">
-                             <div class="flex justify-between items-center mb-2">
+                            <div class="flex justify-between items-center mb-2">
                                 <span class="font-bold text-red-800">Стоимость билета:</span>
                                 <span class="font-black text-xl text-red-600">280.000 сум</span>
                             </div>
-                            <p class="text-xs text-red-500 flex items-center"><i class="fas fa-info-circle mr-1"></i> Запись по предоплате до 22 декабря</p>
+                            <p class="text-xs text-red-500 flex items-center"><i class="fas fa-info-circle mr-1"></i>
+                                Запись по предоплате до 22 декабря</p>
                         </div>
                         <div class="grid grid-cols-2 gap-3 text-xs font-bold text-center mt-auto">
-                            <div class="bg-white border-2 border-red-100 p-2 rounded-lg text-red-700">25 дек: <br>детки 2-4 года</div>
-                            <div class="bg-white border-2 border-red-100 p-2 rounded-lg text-red-700">26 дек: <br>детки 4+ лет</div>
+                            <div class="bg-white border-2 border-red-100 p-2 rounded-lg text-red-700">25 дек: <br>детки
+                                2-4 года</div>
+                            <div class="bg-white border-2 border-red-100 p-2 rounded-lg text-red-700">26 дек: <br>детки
+                                4+ лет</div>
                         </div>
                     </div>
                 </div>
@@ -284,49 +380,66 @@
 
     <section id="rules" class="py-16 md:py-24 bg-white">
         <div class="container mx-auto px-4 max-w-3xl">
-             <div class="text-center mb-12">
+            <div class="text-center mb-12">
                 <h2 class="text-3xl font-extrabold text-gray-900 mb-4">Важные правила</h2>
                 <p class="text-gray-500">Для комфорта и безопасности всех участников клуба</p>
             </div>
-            
+
             <div class="space-y-4">
                 <div class="flex items-start p-4 md:p-6 bg-slate-50 rounded-2xl border-l-4 border-klever shadow-sm">
-                    <div class="bg-klever text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mr-4 font-bold mt-1">1</div>
+                    <div
+                        class="bg-klever text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mr-4 font-bold mt-1">
+                        1</div>
                     <div>
                         <h4 class="font-bold text-gray-800 mb-1">Пунктуальность</h4>
-                        <p class="text-sm md:text-base text-gray-600">Пожалуйста, приходите на занятия вовремя и вовремя забирайте деток.</p>
+                        <p class="text-sm md:text-base text-gray-600">Пожалуйста, приходите на занятия вовремя и вовремя
+                            забирайте деток.</p>
                     </div>
                 </div>
                 <div class="flex items-start p-4 md:p-6 bg-slate-50 rounded-2xl border-l-4 border-klever shadow-sm">
-                    <div class="bg-klever text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mr-4 font-bold mt-1">2</div>
+                    <div
+                        class="bg-klever text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mr-4 font-bold mt-1">
+                        2</div>
                     <div>
                         <h4 class="font-bold text-gray-800 mb-1">Оплата</h4>
-                        <p class="text-sm md:text-base text-gray-600">Своевременно производите оплату. В случае неуплаты мы оставляем за собой право не допускать ребенка до занятий.</p>
+                        <p class="text-sm md:text-base text-gray-600">Своевременно производите оплату. В случае неуплаты
+                            мы оставляем за собой право не допускать ребенка до занятий.</p>
                     </div>
                 </div>
-                 <div class="flex items-start p-4 md:p-6 bg-slate-50 rounded-2xl border-l-4 border-yellow-400 shadow-sm">
-                     <div class="bg-yellow-400 text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mr-4 font-bold mt-1">3</div>
+                <div class="flex items-start p-4 md:p-6 bg-slate-50 rounded-2xl border-l-4 border-yellow-400 shadow-sm">
+                    <div
+                        class="bg-yellow-400 text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mr-4 font-bold mt-1">
+                        3</div>
                     <div>
                         <h4 class="font-bold text-gray-800 mb-1">Разовые посещения</h4>
-                        <p class="text-sm md:text-base text-gray-600">При посещении разовых занятий мы не оставляем за вами постоянное место в группе.</p>
+                        <p class="text-sm md:text-base text-gray-600">При посещении разовых занятий мы не оставляем за
+                            вами постоянное место в группе.</p>
                     </div>
                 </div>
-                 <div class="flex items-start p-4 md:p-6 bg-slate-50 rounded-2xl border-l-4 border-klever shadow-sm">
-                    <div class="bg-klever text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mr-4 font-bold mt-1">4</div>
+                <div class="flex items-start p-4 md:p-6 bg-slate-50 rounded-2xl border-l-4 border-klever shadow-sm">
+                    <div
+                        class="bg-klever text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mr-4 font-bold mt-1">
+                        4</div>
                     <div>
                         <h4 class="font-bold text-gray-800 mb-1">Зона ожидания</h4>
-                        <p class="text-sm md:text-base text-gray-600">Если ребенок занимается сам, ожидайте снаружи. Присутствие взрослых отвлекает (исключение: первые занятия для новых детей).</p>
+                        <p class="text-sm md:text-base text-gray-600">Если ребенок занимается сам, ожидайте снаружи.
+                            Присутствие взрослых отвлекает (исключение: первые занятия для новых детей).</p>
                     </div>
                 </div>
-                 <div class="flex items-start p-4 md:p-6 bg-red-50 rounded-2xl border-l-4 border-red-500 shadow-sm">
-                    <div class="bg-red-500 text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mr-4 font-bold mt-1"><i class="fas fa-heartbeat"></i></div>
+                <div class="flex items-start p-4 md:p-6 bg-red-50 rounded-2xl border-l-4 border-red-500 shadow-sm">
+                    <div
+                        class="bg-red-500 text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mr-4 font-bold mt-1">
+                        <i class="fas fa-heartbeat"></i></div>
                     <div>
                         <h4 class="font-bold text-red-800 mb-1">Здоровье</h4>
-                        <p class="text-sm md:text-base text-red-700 font-medium">Пожалуйста, не приходите на занятия с признаками болезни. Берегите себя и других!</p>
+                        <p class="text-sm md:text-base text-red-700 font-medium">Пожалуйста, не приходите на занятия с
+                            признаками болезни. Берегите себя и других!</p>
                     </div>
                 </div>
-                 <div class="flex items-start p-4 md:p-6 bg-slate-50 rounded-2xl border-l-4 border-klever shadow-sm">
-                     <div class="bg-klever text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mr-4 font-bold mt-1"><i class="far fa-calendar-check"></i></div>
+                <div class="flex items-start p-4 md:p-6 bg-slate-50 rounded-2xl border-l-4 border-klever shadow-sm">
+                    <div
+                        class="bg-klever text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mr-4 font-bold mt-1">
+                        <i class="far fa-calendar-check"></i></div>
                     <div>
                         <h4 class="font-bold text-gray-800 mb-1">Абонемент</h4>
                         <ul class="text-sm md:text-base text-gray-600 list-disc list-inside">
@@ -343,21 +456,25 @@
 
     <footer class="bg-gray-900 text-white py-12">
         <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-6 md:space-y-0">
+            <div
+                class="flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-6 md:space-y-0">
                 <div class="flex items-center space-x-3 justify-center md:justify-start">
-                    <img src="/img/logo.jpg" alt="Logo" class="w-14 h-14 rounded-full border-2 border-klever">
-                    
+                    <img src="https://i.ibb.co/W4H14jhY/logo.jpg" alt="Logo"
+                        class="w-14 h-14 rounded-full border-2 border-klever">
+
                     <div>
-                         <h3 class="text-2xl font-black text-klever tracking-tight">KLEVER</h3>
-                         <p class="text-gray-400 text-sm">Клуб раннего развития</p>
+                        <h3 class="text-2xl font-black text-klever tracking-tight">KLEVER</h3>
+                        <p class="text-gray-400 text-sm">Клуб раннего развития</p>
                     </div>
                 </div>
-                
+
                 <div class="flex space-x-6">
-                    <a href="https://t.me/Klever_uz" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-blue-400 hover:bg-blue-400 hover:text-white transition text-2xl">
+                    <a href="https://t.me/Klever_uz"
+                        class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-blue-400 hover:bg-blue-400 hover:text-white transition text-2xl">
                         <i class="fab fa-telegram-plane"></i>
                     </a>
-                    <a href="https://www.instagram.com/klever_uz/" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-pink-500 hover:bg-pink-500 hover:text-white transition text-2xl">
+                    <a href="https://www.instagram.com/klever_uz/"
+                        class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-pink-500 hover:bg-pink-500 hover:text-white transition text-2xl">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </div>
@@ -371,15 +488,28 @@
 
     <style>
         @keyframes blob {
-            0% { transform: translate(-50%, -50%) scale(1); }
-            33% { transform: translate(-55%, -45%) scale(1.1) rotate(5deg); }
-            66% { transform: translate(-45%, -55%) scale(0.9) rotate(-5deg); }
-            100% { transform: translate(-50%, -50%) scale(1); }
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+            }
+
+            33% {
+                transform: translate(-55%, -45%) scale(1.1) rotate(5deg);
+            }
+
+            66% {
+                transform: translate(-45%, -55%) scale(0.9) rotate(-5deg);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+            }
         }
+
         .animate-blob {
             animation: blob 15s infinite ease-in-out;
         }
     </style>
 
 </body>
+
 </html>
